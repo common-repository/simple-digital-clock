@@ -1,0 +1,30 @@
+{
+    "landingPage": "\/wp-admin\/admin.php?page=simple-digital-clock",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "6.5"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "features": {
+        "networking": true
+    },
+    "steps": [
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org\/plugins",
+                "slug": "simple-digital-clock"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        }
+    ]
+}
